@@ -1,29 +1,34 @@
-# StudiKasusDibimbing
+# Breast Cancer Classification Project - Machine Learning
 
-Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.  They describe characteristics of the cell nuclei present in the image. A few of the images can be found at http://www.cs.wisc.edu/~street/images/
+## Variables:
+1. ID number
+2. Diagnosis (M = malignant, B = benign)
+   
+## Ten real-valued features are computed for each cell nucleus:
+1. radius (mean of distances from center to points on the perimeter)
+2. texture (standard deviation of gray-scale values)
+3. perimeter
+4. area
+5. smoothness (local variation in radius lengths)
+6. compactness (perimeter^2 / area - 1.0)
+7. concavity (severity of concave portions of the contour)
+8. concave points (number of concave portions of the contour)
+9. symmetry
+10. fractal dimension ("coastline approximation" - 1)
 
-Separating plane described above was obtained using Multisurface Method-Tree (MSM-T) [K. P. Bennett, "Decision Tree Construction Via Linear Programming." Proceedings of the 4th Midwest Artificial Intelligence and Cognitive Science Society, pp. 97-101, 1992], a classification method which uses linear programming to construct a decision tree.  Relevant features were selected using an exhaustive search in the space of 1-4 features and 1-3 separating planes.
+## Goals
+1. Classify breast cancer tumors as malignant (M) or benign (B) using machine learning.
+2. Identify key features influencing the classification (e.g., radius, texture, concavity).
+3. Achieve high accuracy, precision, and recall to ensure reliability.
+4. Compare machine learning algorithms and optimize performance.
 
-The actual linear program used to obtain the separating plane in the 3-dimensional space is that described in: [K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34].
-
-This database is also available through the UW CS ftp server:
-ftp ftp.cs.wisc.edu
-cd math-prog/cpo-dataset/machine-learn/WDBC/
-
-Variables:
-1) ID number
-2) Diagnosis (M = malignant, B = benign)
-3-32)
-Ten real-valued features are computed for each cell nucleus:
-a) radius (mean of distances from center to points on the perimeter)
-b) texture (standard deviation of gray-scale values)
-c) perimeter
-d) area
-e) smoothness (local variation in radius lengths)
-f) compactness (perimeter^2 / area - 1.0)
-g) concavity (severity of concave portions of the contour)
-h) concave points (number of concave portions of the contour)
-i) symmetry 
-j) fractal dimension ("coastline approximation" - 1)
+## Insight
+1. Features like concavity, compactness, and concave points may strongly correlate with malignant tumors.
+2. Address class imbalance to avoid biased predictions.
+3. Model interpretability is crucial for real-world medical use.
 
 Source: https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+
+If you have any suggestions or feedback, please don't hesitate to contact to me in direct message on LinkedIn and email: cindy1808indriyani@gmail.com
+
+#Classification #MachineLearning #RandomForest #GradientBoosting #DecisionTree
